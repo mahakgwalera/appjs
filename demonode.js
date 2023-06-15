@@ -222,21 +222,77 @@ console.log(count);
 count1=count--
 while(num!=0){
     A[count]=num1%10
-
-count--
-num1=parseInt(num1/10)
+    
+    count--
+    num1=parseInt(num1/10)
 }
 console.log("***************");
 console.log(A);
 /*for(i=0;i<count+1;i++){
     console.log(A[i]);
-}
+}*/
 
 
 item=[3,2,6,5,8]
 sum=0
 for(i=0;i<item.length;i++)
 {
+    sum=sum+item[i]
+    console.log(item[i]);
+}
 
-}*/
+console.log(sum);
+for(i=0;i<item.length;i++)
+{   if(item[i]%2==0)
+    console.log(item[i]);
+}
 
+
+item = [3,2,6,5,8]
+item.forEach((s1,s2,s3) => {
+    console.log(s3);
+});
+console.log("*********************");
+item.map((s1,s2,s3) => {
+    console.log(s3);
+});
+
+data =[
+    {id:1,"name":"user1",age:30},
+    {id:2,"name":"user2",age:32},
+    {id:3,"name":"user3",age:32},
+    {id:4,"name":"user4",age:34},
+]
+data.forEach(e => {});
+
+function Add(){
+    n1 =9
+    n2 =8
+    console.log(n1+n2);
+    return n1+n2
+}
+function sub(){
+    n1 =9
+    n2 =8
+    console.log(n1-n2);
+}
+sub()
+r=Add()
+console.log(r);
+
+function sub(n1,n2){
+    console.log(n1-n2);
+}
+
+sub(2,3)
+
+
+
+
+function sub(n1,n2){
+    console.log(n1-n2);
+return n1-n2
+}
+
+r=sub(2,3)
+console.log(r);
