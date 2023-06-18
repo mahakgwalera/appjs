@@ -296,3 +296,21 @@ return n1-n2
 
 r=sub(2,3)
 console.log(r);
+
+Add =(n1,n2)=>{
+    
+    a=n1+n2
+    console.log(a);
+    return a
+}
+r =Add(3,5)
+console.log(r); 
+
+A =[2,3,5,4,7]
+A.forEach(function(d){
+    console.log(d);
+});
+A =[2,3,5,4,7]
+A.forEach(d=>{
+    console.log(d);
+});
